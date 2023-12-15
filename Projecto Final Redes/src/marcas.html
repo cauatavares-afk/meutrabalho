@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: black;
+    }
+
+    h1 {
+      color: white;
+      margin-top: 80px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .logo {
+      width: 20%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    nav {
+        background-color: #00000000;
+        overflow: hidden;
+        text-align: center;
+        position: fixed;
+    }
+    
+    nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: underline;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav a:hover ul {
+        display: block;
+        background-color: #ddd;
+        color: black;
+    }
+
+    header {
+            background-image: #fff5f5;
+            padding: 10px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+      
+  </style>
+  <title>Marcas</title>
+</head>
+<body>
+
+  <header>
+    <h1>Conheça nossas marcas.</h1>
+</header>
+
+  <nav>
+    <a href="index.html" target="_blank">Ínicio</a>
+    <a href="modelos.html" target="_blank">Modelos</a>
+    <a href="dicas.html" target="_blank">Dicas</a>
+    <a href="ajuda.html" target="_blank">Ajuda</a>
+  </nav>
+  
+  <div class="grid-container">
+    <div>
+      <img class="logo" src="puma.jpg" alt="Marca 1">
+    </div>
+    <div>
+      <img class="logo" src="converse.jpg" alt="Marca 2">
+    </div>
+    <div>
+      <img class="logo" src="nb.jpg" alt="Marca 3">
+    </div>
+    <div>
+        <img class="logo" src="reebok.jpg" alt="Marca 4">
+      </div>
+      <div>
+        <img class="logo" src="asics.jpg" alt="Marca 5">
+      </div>
+    <!-- Adicione mais logos conforme necessário -->
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
