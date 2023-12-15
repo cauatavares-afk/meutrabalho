@@ -1,0 +1,51 @@
+<!-- navbar.html -->
+<nav>
+    <a href="modelos.html" target="_blank">Modelos</a>
+    <a href="marcas.html" target="_blank">Marcas</a>
+    <a href="dicas.html" target="_blank">Dicas</a>
+    <a href="ajuda.html" target="_blank">Ajuda</a>
+</nav>
+<style>
+nav {
+    background-color: #00000000;
+    overflow: hidden;
+    text-align: center;
+    position: fixed;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav a:hover ul {
+    display: block;
+    background-color: #ddd;
+    color: black;
+}
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Carrega a barra de navegação dinamicamente
+    var navbarContainer = document.getElementById("navbar-container");
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "navbar.html", true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            navbarContainer.innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+});
+</script>
